@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despega.ai - Estrategia de Crecimiento Personalizada</title>
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/gpt-engineer-file-uploads/ENnY1cQr8yb82cqirDaLRejSItf1/uploads/1759866240739-LeadLinker%20Logo%20Favicon%20.png">
+  <meta property="og:title" content="Despega.ai - Estrategia de Crecimiento Personalizada">
+  <meta property="og:description" content="Una auditoria y estrategia de crecimiento construida especificamente para Despega.ai por Copy Estratega.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png">
+  <meta property="og:url" content="https://danigdecelis.github.io/despega-strategy/">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-dark: #A8893A;
+      --gold-light: rgba(201,168,76,0.08);
+      --gold-border: rgba(201,168,76,0.2);
+      --dark: #0A0A0A;
+      --dark-mid: #1A1A1A;
+      --body-text: #555555;
+      --muted: #999999;
+      --off-white: #F8F6F0;
+      --white: #FFFFFF;
+    }
+
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--dark-mid); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,10,0.97); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 0 40px; height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; }
+    .nav-logo img { height: 48px; display: block; }
+    .nav-cta {
+      border: 1px solid var(--gold); color: var(--gold); background: transparent;
+      font-family: 'Inter', sans-serif; font-weight: 600; font-size: 13px;
+      padding: 10px 22px; border-radius: 6px; cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--dark); }
+
+    /* CARDS */
+    .card { padding: 80px 40px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .card-dark { background: var(--dark); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .card-off { background: var(--off-white); }
+    .card-white { background: var(--white); }
+    .container { max-width: 800px; margin: 0 auto; }
+
+    /* LABELS */
+    .section-label {
+      font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 16px; display: block;
+    }
+
+    /* TYPOGRAPHY */
+    h1 { font-family: 'Playfair Display', serif; font-weight: 800; font-size: clamp(32px,5vw,52px); letter-spacing: -0.5px; line-height: 1.1; }
+    h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: clamp(26px,4vw,38px); letter-spacing: -0.3px; line-height: 1.2; }
+    h3 { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px; }
+    h4 { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 15px; }
+    p { font-size: 16px; line-height: 1.75; }
+
+    .on-dark h1, .on-dark h2, .on-dark h3, .on-dark h4 { color: var(--white); }
+    .on-dark p { color: rgba(255,255,255,0.7); }
+    .on-light h1, .on-light h2, .on-light h3 { color: var(--dark-mid); }
+    .on-light p { color: var(--body-text); }
+
+    /* HERO */
+    .hero-title { color: var(--white); margin-bottom: 16px; }
+    .hero-sub { color: rgba(255,255,255,0.65); font-size: 17px; }
+
+    /* TOC */
+    .toc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 12px; margin-top: 32px; }
+    .toc-item {
+      background: rgba(201,168,76,0.06); border: 1px solid var(--gold-border);
+      border-radius: 6px; padding: 16px 18px; display: flex; gap: 12px; align-items: flex-start;
+    }
+    .toc-num { font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 800; color: var(--gold); line-height: 1; flex-shrink: 0; }
+    .toc-title { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .toc-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+
+    /* AUDIT */
+    .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+    .audit-who h3 { color: var(--dark-mid); margin-bottom: 12px; }
+    .audit-who p { color: var(--body-text); margin-bottom: 16px; font-size: 15px; }
+    .photo-row { display: flex; align-items: center; gap: 16px; margin-top: 24px; }
+    .photo-row img { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--gold); object-fit: cover; }
+    .photo-info h4 { font-size: 15px; color: var(--dark-mid); }
+    .photo-info p { font-size: 13px; color: var(--muted); margin: 0; }
+    .audit-how { background: var(--off-white); border: 1px solid rgba(0,0,0,0.08); border-radius: 10px; padding: 28px; }
+    .audit-how h4 { color: var(--dark-mid); margin-bottom: 10px; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .audit-how p { font-size: 14px; color: var(--body-text); line-height: 1.65; }
+
+    /* FINDINGS */
+    .findings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+    .finding-card { background: var(--off-white); border: 1px solid rgba(0,0,0,0.07); border-radius: 10px; padding: 22px; border-left: 3px solid var(--gold); }
+    .finding-card h4 { color: var(--dark-mid); margin-bottom: 6px; }
+    .finding-card p { font-size: 14px; color: var(--body-text); line-height: 1.6; }
+    .finding-url { font-size: 12px; color: var(--gold); font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 20px; display: block; }
+
+    /* TECH STACK */
+    .tech-row { display: flex; gap: 12px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .tech-row:last-child { border-bottom: none; }
+    .tech-label { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: var(--gold); width: 160px; flex-shrink: 0; }
+    .tech-value { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.5; }
+    .tag { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-right: 6px; }
+    .tag-green { background: rgba(52,199,89,0.15); color: #34C759; }
+    .tag-red { background: rgba(255,59,48,0.15); color: #FF3B30; }
+    .tag-yellow { background: rgba(255,204,0,0.15); color: #FFCC00; }
+
+    /* TRANSITION */
+    .transition-divider { text-align: center; }
+    .transition-badge { display: inline-block; background: var(--gold); color: var(--dark); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; padding: 10px 28px; border-radius: 4px; margin-bottom: 24px; }
+    .transition-divider h2 { color: var(--white); margin-bottom: 12px; }
+    .transition-divider p { color: rgba(255,255,255,0.6); max-width: 520px; margin: 0 auto; }
+
+    /* PROBLEMS */
+    .problem-body { font-size: 16px; color: var(--body-text); margin-bottom: 28px; max-width: 680px; }
+    .journey { margin-top: 28px; }
+    .journey-title { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+    .journey-steps { display: flex; flex-direction: column; }
+    .journey-step { display: flex; gap: 20px; align-items: flex-start; padding-bottom: 20px; position: relative; }
+    .journey-step:not(:last-child)::before { content: ''; position: absolute; left: 19px; top: 38px; width: 2px; height: calc(100% - 20px); background: var(--gold-border); }
+    .step-circle { width: 38px; height: 38px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; color: var(--gold); flex-shrink: 0; background: var(--dark); }
+    .step-content h4 { color: var(--white); font-size: 15px; margin-bottom: 4px; }
+    .step-content p { color: rgba(255,255,255,0.6); font-size: 14px; line-height: 1.5; margin: 0; }
+    .problem-support { background: rgba(255,255,255,0.03); border: 1px solid rgba(201,168,76,0.12); border-radius: 10px; padding: 24px; margin-top: 24px; }
+    .problem-support p { color: rgba(255,255,255,0.65); font-size: 15px; margin-bottom: 10px; }
+    .problem-support p:last-child { margin-bottom: 0; }
+
+    /* NUMBERS */
+    .numbers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 40px; }
+    .number-block { background: rgba(255,255,255,0.04); padding: 36px 28px; }
+    .number-big { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 800; color: var(--gold); line-height: 1; display: block; margin-bottom: 8px; }
+    .number-label { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 8px; display: block; }
+    .number-desc { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+    .numbers-closer { margin-top: 40px; padding-top: 32px; border-top: 1px solid rgba(201,168,76,0.2); }
+    .numbers-closer p { color: rgba(255,255,255,0.7); font-size: 16px; }
+    .numbers-closer strong { color: var(--gold); }
+
+    /* LEAD MAGNETS */
+    .lm-list { margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+    .lm-card { background: var(--white); border: 1px solid rgba(0,0,0,0.08); border-radius: 10px; padding: 24px 28px; display: flex; gap: 20px; align-items: flex-start; }
+    .lm-card.featured { background: var(--gold-light); border-color: var(--gold-border); }
+    .lm-num { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 800; color: var(--gold); flex-shrink: 0; line-height: 1; padding-top: 2px; }
+    .lm-content h4 { font-size: 15px; color: var(--dark-mid); margin-bottom: 6px; }
+    .lm-content p { font-size: 14px; color: var(--body-text); line-height: 1.6; margin: 0; }
+    .lm-badge { display: inline-block; background: var(--gold); color: var(--dark); font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; margin-bottom: 8px; }
+
+    /* EXAMPLE PAGE PREVIEW */
+    .preview-card {
+      border: 1px solid var(--gold-border); border-radius: 10px; overflow: hidden;
+      margin-top: 32px; cursor: pointer; text-decoration: none; display: block;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .preview-card:hover { border-color: var(--gold); box-shadow: 0 8px 32px rgba(201,168,76,0.15); transform: translateY(-4px); }
+    .preview-hero {
+      background: #0A0A14; padding: 40px 36px;
+      border-bottom: 1px solid rgba(74,107,255,0.2);
+    }
+    .preview-label { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #4C6EF5; margin-bottom: 16px; display: block; }
+    .preview-title { font-family: 'Syne', 'Inter', sans-serif; font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 12px; line-height: 1.2; }
+    .preview-sub { font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 24px; line-height: 1.5; }
+    .preview-stats { display: flex; gap: 24px; margin-bottom: 24px; }
+    .preview-stat .stat-n { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 800; color: #4C6EF5; display: block; }
+    .preview-stat .stat-l { font-size: 11px; color: rgba(255,255,255,0.5); }
+    .preview-form { display: flex; gap: 10px; max-width: 480px; }
+    .preview-input { flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 10px 14px; color: rgba(255,255,255,0.5); font-size: 13px; }
+    .preview-btn { background: #4C6EF5; color: #fff; border: none; border-radius: 6px; padding: 10px 20px; font-size: 13px; font-weight: 700; white-space: nowrap; cursor: pointer; }
+    .preview-bar { background: var(--off-white); padding: 16px 28px; display: flex; justify-content: space-between; align-items: center; }
+    .preview-url { font-size: 12px; color: var(--muted); font-family: 'Inter', sans-serif; }
+    .preview-cta { font-size: 13px; font-weight: 600; color: var(--gold); }
+
+    /* WHAT ELSE */
+    .email-seq { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+    .email-item { display: flex; gap: 16px; align-items: flex-start; background: var(--off-white); border-radius: 8px; padding: 18px 20px; }
+    .email-num { width: 28px; height: 28px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; color: var(--dark); flex-shrink: 0; }
+    .email-content h4 { font-size: 14px; color: var(--dark-mid); margin-bottom: 4px; }
+    .email-content p { font-size: 13px; color: var(--body-text); margin: 0; line-height: 1.5; }
+    .build-item { border: 1px solid var(--gold-border); border-radius: 10px; padding: 24px 28px; margin-top: 16px; }
+    .build-item h3 { color: var(--dark-mid); margin-bottom: 8px; font-size: 17px; }
+    .build-item p { font-size: 15px; color: var(--body-text); margin: 0; }
+
+    /* GUARANTEE */
+    .guarantee-box { background: var(--gold-light); border: 1px solid var(--gold-border); border-radius: 10px; padding: 28px 32px; margin-bottom: 40px; text-align: center; }
+    .guarantee-box p { font-size: 17px; color: var(--dark-mid); font-weight: 500; line-height: 1.6; }
+    .guarantee-box strong { color: var(--gold); }
+    .g-steps { display: flex; flex-direction: column; gap: 0; }
+    .g-step { display: flex; gap: 20px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .g-step:last-child { border-bottom: none; }
+    .g-num { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 800; color: var(--gold); flex-shrink: 0; line-height: 1; width: 40px; }
+    .g-who { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .g-title { font-size: 15px; font-weight: 700; color: var(--dark-mid); margin-bottom: 4px; }
+    .g-desc { font-size: 14px; color: var(--body-text); margin: 0; line-height: 1.5; }
+
+    /* CTA */
+    .cta-reply { color: rgba(255,255,255,0.5); font-size: 15px; margin-bottom: 16px; }
+    .divider-or { text-align: center; font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.25); margin: 20px 0; }
+    .btn-calendly { border: 1px solid var(--gold); color: var(--gold); background: transparent; padding: 16px 36px; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.2s; display: inline-block; }
+    .btn-calendly:hover { background: var(--gold); color: var(--dark); }
+
+    /* FAQ */
+    .faq-list { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: var(--off-white); border-radius: 10px; padding: 24px 28px; }
+    .faq-item h4 { color: var(--dark-mid); margin-bottom: 10px; font-size: 15px; }
+    .faq-item p { font-size: 14px; color: var(--body-text); margin: 0; line-height: 1.6; }
+
+    /* ABOUT */
+    .about-card { display: flex; gap: 24px; align-items: flex-start; padding: 40px; background: var(--off-white); border-radius: 10px; }
+    .about-photo { width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--gold); object-fit: cover; flex-shrink: 0; }
+    .about-name { font-size: 18px; font-weight: 700; color: var(--dark-mid); margin-bottom: 2px; }
+    .about-title { font-size: 13px; color: var(--gold); font-weight: 600; margin-bottom: 12px; display: block; }
+    .about-bio { font-size: 14px; color: var(--body-text); line-height: 1.6; }
+
+    /* FOOTER */
+    footer { background: var(--dark); border-top: 1px solid rgba(201,168,76,0.15); padding: 40px; text-align: center; }
+    footer img { height: 36px; display: block; margin: 0 auto 16px; }
+    footer p { font-size: 13px; color: rgba(255,255,255,0.4); }
+
+    /* RESPONSIVE */
+    @media (max-width: 680px) {
+      nav { padding: 0 20px; }
+      .card { padding: 60px 20px; }
+      .audit-grid, .findings-grid, .numbers-grid { grid-template-columns: 1fr; }
+      .about-card { flex-direction: column; padding: 28px 20px; }
+      .preview-stats { flex-wrap: wrap; gap: 16px; }
+      .preview-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega"></a>
+  <button class="nav-cta" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">Reserva una llamada</button>
+</nav>
+
+<!-- CARD 1: HERO -->
+<div class="card card-dark" style="padding-top: 128px; text-align: center;">
+  <div class="container">
+    <span class="section-label">Estrategia personalizada</span>
+    <h1 class="hero-title">Despega.ai</h1>
+    <p class="hero-sub" style="max-width: 560px; margin: 0 auto;">Estrategia de crecimiento construida especificamente para Despega.ai. Cada hallazgo, cada recomendacion y cada ejemplo esta basado en tu web real y tu situacion actual.</p>
+  </div>
+</div>
+
+<!-- CARD 2: INTRO -->
+<div class="card card-white on-light">
+  <div class="container">
+    <p style="font-size: 19px; color: var(--body-text); line-height: 1.7; max-width: 680px;">Este documento fue construido especificamente para <strong style="color: var(--dark-mid);">Despega.ai</strong>. Cada hallazgo, cada recomendacion y cada ejemplo esta basado en tu web real, lo que encontre investigando el producto y lo que identifique como la brecha mas grande entre donde estas y donde podrias estar.</p>
+  </div>
+</div>
+
+<!-- CARD 3: WHAT'S INSIDE -->
+<div class="card card-dark on-dark">
+  <div class="container">
+    <span class="section-label">Lo que contiene</span>
+    <h2 style="color: var(--white); margin-bottom: 8px;">Lo que hay dentro</h2>
+    <div class="toc-grid">
+      <div class="toc-item"><div class="toc-num">01</div><div><div class="toc-title">La Auditoria</div><div class="toc-desc">Lo que encontre en tu web y tu stack tecnico</div></div></div>
+      <div class="toc-item"><div class="toc-num">02</div><div><div class="toc-title">Los Problemas</div><div class="toc-desc">Lo que te esta costando demos cualificados ahora mismo</div></div></div>
+      <div class="toc-item"><div class="toc-num">03</div><div><div class="toc-title">Los Numeros</div><div class="toc-desc">Lo que esa fuga cuesta cada mes</div></div></div>
+      <div class="toc-item"><div class="toc-num">04</div><div><div class="toc-title">Lead Magnets Sugeridos</div><div class="toc-desc">Ideas concretas para capturar emails y construir pipeline</div></div></div>
+      <div class="toc-item"><div class="toc-num">05</div><div><div class="toc-title">La Pagina de Ejemplo</div><div class="toc-desc">Una version ya construida de tu pagina de captacion</div></div></div>
+      <div class="toc-item"><div class="toc-num">06</div><div><div class="toc-title">Que Mas Construiriamos</div><div class="toc-desc">El funnel completo detras de la pagina</div></div></div>
+      <div class="toc-item"><div class="toc-num">07</div><div><div class="toc-title">Oferta y Garantia</div><div class="toc-desc">Como garantizamos resultados</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 4: AUDIT INTRO -->
+<div class="card card-off on-light">
+  <div class="container">
+    <span class="section-label">La Auditoria</span>
+    <h2>Hola Mario, me llamo Daniel</h2>
+    <div class="audit-grid">
+      <div class="audit-who">
+        <h3>Quienes somos</h3>
+        <p>Soy el fundador de Copy Estratega. Trabajamos con fundadores y empresas de producto que ya tienen resultados demostrados pero todavia no tienen el sistema digital que convierte ese trabajo en clientes nuevos de forma predecible.</p>
+        <p>Construimos el sistema completo: pagina de captacion, lead magnet, secuencia de nurturing y contenido de autoridad. Todo hecho para ti, todo listo para lanzar.</p>
+        <div class="photo-row">
+          <img src="https://danigdecelis.github.io/factor-rh-strategy/daniel-photo.png" alt="Daniel Garcia de Celis">
+          <div class="photo-info">
+            <h4>Daniel Garcia de Celis</h4>
+            <p>Fundador, Copy Estratega</p>
+          </div>
+        </div>
+      </div>
+      <div class="audit-how">
+        <h4>Como te encontre</h4>
+        <p>Encontre Despega.ai investigando herramientas de agentes de IA para atencion al cliente en el mercado hispanohablante. Despues de revisar la web, el stack tecnico y el modelo de negocio, identifique tres brechas concretas entre lo que el producto puede hacer y lo que el visitante encuentra cuando llega a la web.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 5: LINKEDIN -->
+<div class="card card-white on-light">
+  <div class="container">
+    <span class="section-label">Paso 1</span>
+    <h2>El fundador</h2>
+    <p style="color: var(--body-text); margin: 16px 0 24px;">Lo que encontre y lo que no encontre:</p>
+    <div class="findings-grid">
+      <div class="finding-card">
+        <h4>Producto con traccion real</h4>
+        <p>Despega.ai tiene mas de 500.000 conversaciones gestionadas. Eso no es una demo ni un prototipo. Es un producto que funciona y que empresas reales estan usando. Es exactamente la clase de traccion que genera confianza.</p>
+      </div>
+      <div class="finding-card">
+        <h4>Resultados cuantificados</h4>
+        <p>98% de resolucion, 70% de reduccion de tiempo, 90% de consultas automatizadas. Tienes datos concretos que la mayoria de competidores no tienen. El problema no es que los datos no existan, sino donde estan y como se presentan.</p>
+      </div>
+      <div class="finding-card">
+        <h4>Mercado con viento a favor</h4>
+        <p>El segmento de agentes de IA para atencion al cliente crece a doble digito en Espana y Latam. Entrar ahora con un producto ya operativo es una ventaja competitiva que desaparece en 12 a 18 meses cuando el mercado se llene.</p>
+      </div>
+      <div class="finding-card">
+        <h4>Fundador sin visibilidad publica</h4>
+        <p>No encontre presencia publica del fundador: ni perfil activo, ni articulos, ni apariciones en podcasts o medios. El producto existe y tiene resultados, pero no tiene una persona visible detras que genere confianza adicional.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 6: WEBSITE -->
+<div class="card card-off on-light">
+  <div class="container">
+    <span class="section-label">Paso 2</span>
+    <h2>Tu web</h2>
+    <a href="https://despega.ai" class="finding-url" target="_blank">despega.ai</a>
+    <p style="color: var(--body-text); margin-bottom: 24px;">Lo que esta funcionando:</p>
+    <div class="findings-grid">
+      <div class="finding-card">
+        <h4>Diseno profesional y moderno</h4>
+        <p>La web esta construida en Framer con un estetico de IA SaaS que transmite seriedad tecnica. El diseno no es un problema. La estructura y los mensajes si lo son.</p>
+      </div>
+      <div class="finding-card">
+        <h4>Propuesta de valor clara</h4>
+        <p>"Automatiza tu atencion al cliente con Inteligencia Artificial" es directo y comprensible. El visitante entiende en 3 segundos que hace el producto. Eso es mas dificil de conseguir de lo que parece.</p>
+      </div>
+      <div class="finding-card">
+        <h4>Cifras de traccion visibles</h4>
+        <p>"+500K Conversaciones" aparece en el hero con estrellas y avatares. Es el tipo de prueba social que genera confianza inmediata. El problema es que no va acompanado de ninguna historia concreta que lo respalde.</p>
+      </div>
+      <div class="finding-card">
+        <h4>12 sectores cubiertos</h4>
+        <p>La pagina de industrias demuestra que el producto tiene aplicacion en ecommerce, turismo, inmobiliaria, salud, legal y mas. La segmentacion existe. La captacion especifica por sector no.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 7: TECH STACK -->
+<div class="card card-dark on-dark">
+  <div class="container">
+    <span class="section-label">Paso 3</span>
+    <h2 style="color: var(--white); margin-bottom: 32px;">Tu stack tecnico</h2>
+    <div class="tech-row">
+      <div class="tech-label">CMS</div>
+      <div class="tech-value"><span class="tag tag-yellow">Framer</span> Web moderna, bien construida. Rapida y con buen diseno base.</div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-label">Facebook Pixel</div>
+      <div class="tech-value"><span class="tag tag-green">Activo</span> Mide eventos. Podria alimentar retargeting si hubiera campanas activas.</div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-label">Google Analytics</div>
+      <div class="tech-value"><span class="tag tag-green">Activo</span> Tienes medicion de trafico. Sabes cuantos entran. No sabes por que se van sin convertir.</div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-label">Google Tag Manager</div>
+      <div class="tech-value"><span class="tag tag-green">Activo</span> La infraestructura de medicion existe. Eso facilita activar nuevas integraciones sin tocar codigo.</div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-label">Plataforma de email</div>
+      <div class="tech-value"><span class="tag tag-red">No detectada</span> No hay Klaviyo, HubSpot, ActiveCampaign ni equivalente. El visitante que no pide demo desaparece para siempre sin forma de recuperarlo.</div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-label">Live chat / soporte</div>
+      <div class="tech-value"><span class="tag tag-red">No detectado</span> Ninguna herramienta de atencion en tiempo real. Paradoja notable para un producto de agentes de IA para atencion al cliente.</div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-label">Lead magnets</div>
+      <div class="tech-value"><span class="tag tag-red">Ninguno</span> El unico camino es "pedir demo" o "probar gratis". Sin paso intermedio para el visitante que investiga pero no esta listo.</div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-label">Google Ads</div>
+      <div class="tech-value"><span class="tag tag-yellow">Sin anuncios activos</span> Todo el trafico es organico o directo. Sin inversion pagada activa detectada.</div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 8: TRANSITION -->
+<div class="card card-dark on-dark" style="text-align: center; padding: 60px 40px;">
+  <div class="container transition-divider">
+    <div class="transition-badge">Auditoria completa</div>
+    <h2>Los Problemas</h2>
+    <p>Ahora que sabemos que hay, esto es lo que esos hallazgos revelan sobre lo que te esta costando demos cualificados ahora mismo.</p>
+  </div>
+</div>
+
+<!-- CARD 9: PROBLEM 1 -->
+<div class="card card-white on-light">
+  <div class="container">
+    <span class="section-label">Problema 1</span>
+    <h2>Un producto real sin una historia detras</h2>
+    <p class="problem-body">Despega.ai tiene traccion: mas de medio millon de conversaciones gestionadas, tasas de resolucion del 98%, clientes en multiples sectores. Esos resultados son reales y son extraordinarios para una herramienta en fase de crecimiento.</p>
+    <p class="problem-body">Pero cuando un decision-maker llega a la web y busca quién esta detras de este producto, no encuentra nada. No hay historia del fundador, no hay equipo visible, no hay caso de exito nombrado. Solo numeros sueltos sin cara.</p>
+    <p class="problem-body">En el mercado de herramientas de IA hay cientos de opciones. El comprador que tiene que justificar internamente la decision de adoptar una plataforma nueva necesita confiar en las personas que la construyeron. Sin esa historia, el riesgo percibido es mas alto de lo que deberia ser.</p>
+    <div class="card card-dark on-dark" style="padding: 32px; border-radius: 10px; margin-top: 24px;">
+      <div class="journey-title" style="color: rgba(255,255,255,0.4);">Recorrido actual del comprador</div>
+      <div class="journey-steps">
+        <div class="journey-step">
+          <div class="step-circle">1</div>
+          <div class="step-content"><h4>Descubre Despega.ai</h4><p>Llega desde una busqueda sobre automatizacion de atencion al cliente o por recomendacion.</p></div>
+        </div>
+        <div class="journey-step">
+          <div class="step-circle">2</div>
+          <div class="step-content"><h4>Ve el producto y las estadisticas</h4><p>500K conversaciones, 98% resolucion, animaciones de IA. El producto parece solido.</p></div>
+        </div>
+        <div class="journey-step">
+          <div class="step-circle">3</div>
+          <div class="step-content"><h4>Busca quien lo construyo</h4><p>No encuentra equipo, ni historia del fundador, ni casos de exito nombrados. El riesgo de adopcion sube.</p></div>
+        </div>
+        <div class="journey-step">
+          <div class="step-circle">4</div>
+          <div class="step-content"><h4>Sale sin convertir</h4><p>No esta listo para pedir demo de un producto sin historia detras. Se va a investigar alternativas y no vuelve.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 10: PROBLEM 2 -->
+<div class="card card-off on-light">
+  <div class="container">
+    <span class="section-label">Problema 2</span>
+    <h2>Las estadisticas mas potentes no tienen contexto</h2>
+    <p class="problem-body">"+500K conversaciones", "98% de resolucion", "70% de reduccion de tiempo", "90% de consultas automatizadas". Esos son argumentos de venta extraordinarios. Cierran contratos.</p>
+    <p class="problem-body">Pero estan presentados como numeros flotando en el vacío. No hay ninguna empresa nombrada, ninguna historia de como se llego a ese resultado, ningun director de operaciones que cuente en que cambio su dia a dia desde que usa Despega.ai.</p>
+    <div class="findings-grid" style="margin-top: 24px;">
+      <div class="finding-card">
+        <h4>Los numeros existen pero no tienen historia</h4>
+        <p>Un numero sin contexto es tan creible como uno inventado. "98% de resolucion en ecommerce de moda con 2.000 consultas diarias" cierra ventas. "98% de resolucion" es una estadistica mas en una industria llena de estadisticas.</p>
+      </div>
+      <div class="finding-card">
+        <h4>Los competidores usan los mismos numeros</h4>
+        <p>Cualquier herramienta de chatbot o agente de IA publica cifras similares. Sin un caso real nombrado, Despega.ai no tiene diferenciacion en el momento que mas importa: cuando el comprador compara opciones.</p>
+      </div>
+      <div class="finding-card">
+        <h4>El caso de exito es la herramienta de cierre</h4>
+        <p>Un solo caso real, con empresa, sector y numeros concretos, convierte mas que 10 estadisticas genericas. Es el argumento al que vuelve el comprador para justificar su decision ante su equipo.</p>
+      </div>
+      <div class="finding-card">
+        <h4>Sin caso, la decision se pospone</h4>
+        <p>El decision-maker que no tiene un caso comparable al suyo suele posponer la decision. "Lo miro cuando tenga mas tiempo" es la forma educada de decir "no me has dado suficiente razon para actuar ahora".</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 11: PROBLEM 3 -->
+<div class="card card-white on-light">
+  <div class="container">
+    <span class="section-label">Problema 3</span>
+    <h2>Un solo camino para un visitante que tiene muchas dudas</h2>
+    <a href="https://despega.ai" class="finding-url" target="_blank">despega.ai</a>
+    <p class="problem-body">Todos los CTAs de Despega.ai llevan al mismo sitio: "Probar Despega.ai" o "Agendar Demo". Eso esta bien para el 5% del trafico que ya sabe lo que quiere y esta listo para actuar.</p>
+    <p class="problem-body">El otro 95% llega en fase de investigacion: ¿Funciona esto para mi sector especifico? ¿Cuanto tiempo lleva implementarlo? ¿Cual es el ROI real para una empresa de mi tamano? Ese visitante no esta listo para una demo pero estaria dispuesto a descargar una calculadora de ROI o una guia practica.</p>
+    <div class="problem-support">
+      <p><strong style="color: var(--dark-mid);">Sin paso intermedio:</strong> El visitante llega, no esta listo para la demo, no tiene donde dejar su email a cambio de algo util. Se va.</p>
+      <p><strong style="color: var(--dark-mid);">Sin plataforma de email:</strong> Incluso si dejara su email en algun formulario, no hay secuencia de nurturing activa. El lead cae en un formulario y espera que alguien lo llame.</p>
+      <p><strong style="color: var(--dark-mid);">Sin retargeting activo:</strong> El Facebook Pixel esta instalado pero sin campanas activas. El visitante que se va no vuelve a ver Despega.ai en su feed.</p>
+      <p><strong style="color: var(--dark-mid);">El resultado:</strong> Cada visitante que no pide demo es un lead perdido para siempre. No hay forma de recuperarlo, y como no hay email platform, tampoco hay forma de saber cuantos se van ni por que.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 12: NUMBERS -->
+<div class="card card-dark on-dark">
+  <div class="container">
+    <span class="section-label">Los Numeros</span>
+    <h2 style="color: var(--white); margin-bottom: 8px;">Lo que esa fuga cuesta cada mes</h2>
+    <p style="color: rgba(255,255,255,0.6); margin-bottom: 0;">Con un producto como Despega.ai, donde cada cliente representa meses o anos de facturacion recurrente, incluso mejoras pequenas en captacion tienen impacto directo en los ingresos.</p>
+    <div class="numbers-grid">
+      <div class="number-block">
+        <span class="number-big">95%</span>
+        <span class="number-label">De los visitantes B2B no estan listos para pedir demo en su primera visita</span>
+        <span class="number-desc">Sin un lead magnet o paso intermedio, ese 95% desaparece sin dejar rastro.</span>
+      </div>
+      <div class="number-block">
+        <span class="number-big">0</span>
+        <span class="number-label">Lead magnets activos para capturar a quien investiga pero no esta listo</span>
+        <span class="number-desc">El unico CTA es la demo. Todo el trafico que no convierte en demo se pierde.</span>
+      </div>
+      <div class="number-block">
+        <span class="number-big">500K+</span>
+        <span class="number-label">Conversaciones gestionadas: el dato mas potente de Despega.ai</span>
+        <span class="number-desc">Sin un caso de exito nombrado, este numero no genera el nivel de confianza que deberia.</span>
+      </div>
+      <div class="number-block">
+        <span class="number-big">90 dias</span>
+        <span class="number-label">Para que el sistema empiece a generar demos cualificados de forma constante</span>
+        <span class="number-desc">Con el funnel activo, el trafico existente deja de perderse y entra en una secuencia que convierte.</span>
+      </div>
+    </div>
+    <div class="numbers-closer">
+      <p>Cada cliente de Despega.ai representa meses de facturacion recurrente. Un solo lead cualificado captado por el sistema cada mes que ahora se pierde, recuperado durante 12 meses, cubre el coste del funnel completo <strong>antes de los 90 dias</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 13: LEAD MAGNETS -->
+<div class="card card-off on-light">
+  <div class="container">
+    <span class="section-label">Lead Magnets Sugeridos</span>
+    <h2>Cinco ideas para capturar al visitante que no esta listo para la demo</h2>
+    <div class="lm-list">
+      <div class="lm-card featured">
+        <div class="lm-num">1</div>
+        <div class="lm-content">
+          <div class="lm-badge">Lead magnet principal</div>
+          <h4>"Calculadora de ROI: Descubre cuanto te cuesta cada conversacion sin IA y que te ahorras automatizando"</h4>
+          <p>Herramienta interactiva donde el usuario introduce el numero de conversaciones diarias, el tiempo medio por conversacion y el coste por hora de su equipo. El resultado muestra el coste actual y el ahorro potencial con Despega.ai. Alta intencion, alta viralidad entre gestores de operaciones y directores de ecommerce. Este es el lead magnet sobre el que esta construida la pagina de ejemplo.</p>
+        </div>
+      </div>
+      <div class="lm-card">
+        <div class="lm-num">2</div>
+        <div class="lm-content">
+          <h4>"Guia practica: Como implementar un agente de IA en tu negocio en 7 dias sin conocimientos tecnicos"</h4>
+          <p>Para el decision-maker que quiere implementar pero no sabe por donde empezar. Cubre integracion con WhatsApp, Instagram y web, casos de uso por sector y como medir el ROI en las primeras semanas. Captura a quien tiene intencion pero necesita seguridad antes de dar el paso.</p>
+        </div>
+      </div>
+      <div class="lm-card">
+        <div class="lm-num">3</div>
+        <div class="lm-content">
+          <h4>"Checklist: Los 10 procesos de atencion al cliente que puedes automatizar esta semana"</h4>
+          <p>Recurso rapido y accionable. El visitante marca que procesos tiene, ve cuantos puede automatizar con IA y cuantos ya esta perdiendo tiempo gestionando manualmente. Genera urgencia sin presion. Perfecto para compartir en LinkedIn y generar trafico adicional.</p>
+        </div>
+      </div>
+      <div class="lm-card">
+        <div class="lm-num">4</div>
+        <div class="lm-content">
+          <h4>"Caso practico: Como [empresa X] de [sector] resolvio el 98% de sus consultas automaticamente y redujo su equipo de soporte un 60%"</h4>
+          <p>Para cuando Despega.ai tenga un cliente que autorice el uso de su nombre. Un caso real nombrado, con sector especifico y numeros concretos, es el argumento de cierre mas potente del B2B. Cualquier empresa del mismo sector que lo lea sentira que la herramienta ya funciona para su contexto.</p>
+        </div>
+      </div>
+      <div class="lm-card">
+        <div class="lm-num">5</div>
+        <div class="lm-content">
+          <h4>"Mini-curso gratuito por email: Automatizacion de atencion al cliente con IA en 5 dias"</h4>
+          <p>Secuencia de 5 emails que explica que es un agente de IA, como se diferencia de un chatbot, como se implementa, cuanto cuesta y que ROI esperar. Captura a quien esta en fase de aprendizaje y lo convierte en lead cualificado antes de que tenga urgencia activa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 14: EXAMPLE PAGE -->
+<div class="card card-white on-light">
+  <div class="container">
+    <span class="section-label">La Pagina de Ejemplo</span>
+    <h2>No nos limitamos a encontrar el problema</h2>
+    <p style="color: var(--body-text); margin-top: 16px; margin-bottom: 8px;">Construimos la solucion.</p>
+    <p style="color: var(--body-text);">Esta es una version reconstruida de la pagina de captacion para Despega.ai, centrada en el Lead Magnet 1: la Calculadora de ROI de Automatizacion con IA.</p>
+
+    <a href="https://danigdecelis.github.io/despega-funnel/" target="_blank" class="preview-card">
+      <div class="preview-hero">
+        <span class="preview-label">Despega.ai - Calculadora gratuita</span>
+        <div class="preview-title">Descubre cuanto te cuesta cada conversacion sin IA</div>
+        <p class="preview-sub">Calcula en 60 segundos el ahorro real que obtendrias automatizando tu atencion al cliente con Despega.ai.</p>
+        <div class="preview-stats">
+          <div class="preview-stat"><span class="stat-n">500K+</span><span class="stat-l">Conversaciones gestionadas</span></div>
+          <div class="preview-stat"><span class="stat-n">98%</span><span class="stat-l">Tasa de resolucion</span></div>
+          <div class="preview-stat"><span class="stat-n">70%</span><span class="stat-l">Reduccion de tiempo</span></div>
+        </div>
+        <div class="preview-form">
+          <div class="preview-input">Tu email de empresa</div>
+          <div class="preview-btn">Calcular mi ROI gratis</div>
+        </div>
+      </div>
+      <div class="preview-bar">
+        <span class="preview-url">danigdecelis.github.io/despega-funnel/</span>
+        <span class="preview-cta">Ver pagina en vivo &rarr;</span>
+      </div>
+    </a>
+
+    <div style="margin-top: 24px; background: var(--off-white); border-radius: 10px; padding: 24px 28px;">
+      <p style="font-size: 14px; color: var(--body-text); margin-bottom: 12px;">Que cambia respecto a la web actual:</p>
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+        <li style="display: flex; gap: 10px; font-size: 14px; color: var(--body-text); align-items: flex-start;"><span style="color: var(--gold); font-weight: 700; flex-shrink: 0;">+</span>Lead magnet especifico con propuesta de valor clara</li>
+        <li style="display: flex; gap: 10px; font-size: 14px; color: var(--body-text); align-items: flex-start;"><span style="color: var(--gold); font-weight: 700; flex-shrink: 0;">+</span>Email gate que captura al visitante antes de la demo</li>
+        <li style="display: flex; gap: 10px; font-size: 14px; color: var(--body-text); align-items: flex-start;"><span style="color: var(--gold); font-weight: 700; flex-shrink: 0;">+</span>Las estadisticas de Despega.ai como prueba social en contexto</li>
+        <li style="display: flex; gap: 10px; font-size: 14px; color: var(--body-text); align-items: flex-start;"><span style="color: var(--gold); font-weight: 700; flex-shrink: 0;">+</span>CTA que convierte investigadores en leads antes de pedir la demo</li>
+        <li style="display: flex; gap: 10px; font-size: 14px; color: var(--body-text); align-items: flex-start;"><span style="color: var(--gold); font-weight: 700; flex-shrink: 0;">-</span>En lugar de: trafico a la homepage con un unico CTA de demo</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 15: WHAT ELSE -->
+<div class="card card-off on-light">
+  <div class="container">
+    <span class="section-label">Que Mas Construiriamos</span>
+    <h2>El sistema completo detras de la pagina</h2>
+
+    <h3 style="margin: 32px 0 16px; color: var(--dark-mid);">1. Secuencia de email nurturing: 6 emails en 30 dias</h3>
+    <div class="email-seq">
+      <div class="email-item"><div class="email-num">1</div><div class="email-content"><h4>Entrega de la calculadora y bienvenida</h4><p>El resultado de tu calculo + que hace exactamente Despega.ai en una frase.</p></div></div>
+      <div class="email-item"><div class="email-num">2</div><div class="email-content"><h4>El coste oculto de la atencion manual</h4><p>Lo que no aparece en la hoja de calculo: el tiempo del equipo, los errores, la insatisfaccion del cliente.</p></div></div>
+      <div class="email-item"><div class="email-num">3</div><div class="email-content"><h4>Como funciona Despega.ai en la practica</h4><p>Demo en video de 3 minutos mostrando una conversacion real resuelta por el agente de IA de principio a fin.</p></div></div>
+      <div class="email-item"><div class="email-num">4</div><div class="email-content"><h4>La objecion mas frecuente: "mi sector es diferente"</h4><p>Casos de uso reales en ecommerce, inmobiliaria, clinicas y logistica. El agente se adapta al sector.</p></div></div>
+      <div class="email-item"><div class="email-num">5</div><div class="email-content"><h4>Listo para probarlo: asi es el onboarding en 7 dias</h4><p>Sin riesgo, sin tarjeta, sin conocimientos tecnicos. Paso a paso de como se arranca.</p></div></div>
+      <div class="email-item"><div class="email-num">6</div><div class="email-content"><h4>Seguimiento final</h4><p>Las empresas que ya automatizaron vs las que siguen esperando: que estan ganando y que estan dejando de ganar.</p></div></div>
+    </div>
+
+    <h3 style="margin: 40px 0 16px; color: var(--dark-mid);">2. Landing page por sector de mayor valor</h3>
+    <div class="build-item">
+      <h3>Pagina dedicada para ecommerce</h3>
+      <p>El ecommerce es el sector con mayor volumen de conversaciones y mayor urgencia de automatizacion. Una landing especifica con el caso de uso de ecommerce, el calculo de ROI en ese contexto y un CTA de demo orientado a directores de operaciones de tiendas online.</p>
+    </div>
+
+    <h3 style="margin: 32px 0 16px; color: var(--dark-mid);">3. Activacion de la autoridad del fundador en LinkedIn</h3>
+    <div class="build-item">
+      <h3>Sistema de contenido para construir autoridad publica</h3>
+      <p>3 posts mensuales basados en datos reales de Despega.ai: casos de uso, estadisticas de rendimiento, reflexiones sobre el futuro de la atencion al cliente con IA. El fundador visible es el activo de captacion mas subestimado en el mercado de SaaS hispanohablante.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 16: GUARANTEE -->
+<div class="card card-white on-light">
+  <div class="container">
+    <span class="section-label">Nuestra Oferta y Garantia</span>
+    <h2>Tendras tu sistema completo funcionando en 30 dias y generando demos cualificados en 90</h2>
+    <p style="color: var(--body-text); margin-top: 16px; margin-bottom: 32px;">Si no lo logramos, seguimos trabajando sin cobrarte hasta que lo sea.</p>
+
+    <div class="guarantee-box">
+      <p>Tendras tu sistema completo funcionando en <strong>30 dias</strong> y generando demos cualificados de forma constante en <strong>90 dias</strong>. Si no lo logramos, seguimos trabajando sin cobrarte hasta que lo hagamos.</p>
+    </div>
+
+    <div class="g-steps">
+      <div class="g-step">
+        <div class="g-num">1</div>
+        <div>
+          <div class="g-who">Los dos</div>
+          <div class="g-title">Llamada de arranque</div>
+          <p class="g-desc">Planificamos el funnel completo juntos. Arranque en 7 a 10 dias habiles.</p>
+        </div>
+      </div>
+      <div class="g-step">
+        <div class="g-num">2</div>
+        <div>
+          <div class="g-who">Tu</div>
+          <div class="g-title">Nos das acceso</div>
+          <p class="g-desc">Backend de la web o subdominio donde desplegar la pagina, plataforma de email y assets de marca.</p>
+        </div>
+      </div>
+      <div class="g-step">
+        <div class="g-num">3</div>
+        <div>
+          <div class="g-who">Nosotros</div>
+          <div class="g-title">La pagina de captacion con la calculadora de ROI</div>
+          <p class="g-desc">Ya construida. Lista para conectar a tu dominio.</p>
+        </div>
+      </div>
+      <div class="g-step">
+        <div class="g-num">4</div>
+        <div>
+          <div class="g-who">Nosotros</div>
+          <div class="g-title">Cargamos la secuencia de nurturing</div>
+          <p class="g-desc">6 emails listos en tu plataforma de email. El lead entra y el sistema trabaja solo.</p>
+        </div>
+      </div>
+      <div class="g-step">
+        <div class="g-num">5</div>
+        <div>
+          <div class="g-who">Nosotros</div>
+          <div class="g-title">Landing page dedicada por sector prioritario</div>
+          <p class="g-desc">Pagina separada con copy enfocado en ecommerce o el sector que mas te interese atacar.</p>
+        </div>
+      </div>
+      <div class="g-step">
+        <div class="g-num">6</div>
+        <div>
+          <div class="g-who">Nosotros</div>
+          <div class="g-title">Activacion de autoridad en LinkedIn</div>
+          <p class="g-desc">3 posts con datos reales de Despega.ai y perfil del fundador actualizado para generar confianza publica.</p>
+        </div>
+      </div>
+      <div class="g-step">
+        <div class="g-num">7</div>
+        <div>
+          <div class="g-who">Nosotros</div>
+          <div class="g-title">Entregamos todo listo para lanzar</div>
+          <p class="g-desc">Cero trabajo extra de tu parte. Tu revisas, apruebas y el sistema empieza a capturar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 17: CTA -->
+<div class="card card-dark" style="text-align: center; border-top: 1px solid rgba(201,168,76,0.3);">
+  <div class="container">
+    <span class="section-label">Siguiente paso</span>
+    <h2 style="color: var(--white); margin-bottom: 24px;">Listo para avanzar?</h2>
+    <p class="cta-reply">Responde directamente al mensaje que te envie y arrancamos la conversacion.</p>
+    <div class="divider-or">O</div>
+    <button class="btn-calendly" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">Reservar una llamada</button>
+  </div>
+</div>
+
+<!-- CARD 18: FAQ -->
+<div class="card card-off on-light">
+  <div class="container">
+    <span class="section-label">Preguntas Frecuentes</span>
+    <h2>Lo que suelen preguntar</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h4>Es todo hecho para mi?</h4>
+        <p>Si. Nos encargamos de todo, desde la construccion hasta el lanzamiento. Tu revisas, apruebas y salimos en vivo.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Que incluye el engagement completo?</h4>
+        <p>La pagina de captacion con la calculadora de ROI, la secuencia de 6 emails de nurturing cargada en tu plataforma, la landing dedicada para el sector de mayor valor, y la activacion de autoridad del fundador en LinkedIn con 3 posts y perfil actualizado.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Cuanto tiempo lleva arrancar?</h4>
+        <p>Arranque en 7 a 10 dias habiles desde nuestra primera llamada.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Que necesitan de nosotros?</h4>
+        <p>Acceso al backend de la web o un subdominio donde desplegar, a tu plataforma de email y a los assets de marca (logo, colores, guia de marca si existe).</p>
+      </div>
+      <div class="faq-item">
+        <h4>Cuanto cuesta?</h4>
+        <p>Hablamos de la inversion en la llamada. La pagina de ejemplo ya esta construida y es tuya independientemente de si avanzamos juntos.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Cual es la garantia?</h4>
+        <p>Sistema completo funcionando en 30 dias y generando demos cualificados en 90. Si no lo logramos, seguimos trabajando sin cobrarte hasta que lo hagamos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 19: ABOUT -->
+<div class="card card-white on-light">
+  <div class="container">
+    <span class="section-label">Sobre Daniel</span>
+    <h2 style="margin-bottom: 32px;">Quien lo ha construido</h2>
+    <div class="about-card">
+      <img class="about-photo" src="https://danigdecelis.github.io/factor-rh-strategy/daniel-photo.png" alt="Daniel Garcia de Celis">
+      <div>
+        <div class="about-name">Daniel Garcia de Celis</div>
+        <span class="about-title">Fundador, Copy Estratega</span>
+        <p class="about-bio">Copy Estratega trabaja con consultores y expertos que ya tienen la metodologia, los resultados y la autoridad, pero todavia no tienen el sistema digital que convierte eso en clientes nuevos de forma predecible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 20: FINAL CTA -->
+<div class="card card-dark" style="text-align: center; border-top: 1px solid rgba(201,168,76,0.3);">
+  <div class="container">
+    <h2 style="color: var(--white); margin-bottom: 24px;">Hablemos</h2>
+    <p class="cta-reply">Responde directamente al mensaje que te envie y arrancamos la conversacion.</p>
+    <div class="divider-or">O</div>
+    <button class="btn-calendly" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">Reservar una llamada</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega" style="height:36px;display:block;margin:0 auto 16px;">
+  <p>2026 Copy Estratega. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
